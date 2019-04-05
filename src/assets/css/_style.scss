@@ -1,0 +1,35 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/*
+COLORS
+*/
+$header: #F3F5F5;
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background: linear-gradient(to top, #00345990 10%, #007EA7 70%);
+}
+
+
+$radiusValue: 7px;
+
+.header {
+  background: $header;
+
+  -webkit-border-top-left-radius: $radiusValue;
+  -moz-border-top-left-radius: $radiusValue;
+  border-top-left-radius: $radiusValue;
+
+  -webkit-border-top-right-radius: $radiusValue;
+  -moz-border-top-right-radius: $radiusValue;
+  border-top-right-radius: $radiusValue;
+}
+
+
+/*****
+SHORTCUTS
+*****/
+@import "shortcuts";
