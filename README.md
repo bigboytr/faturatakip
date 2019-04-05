@@ -1,4 +1,4 @@
-# faturatakip
+# Fatura Takip
 Fatura takip, grafik, ev ekonomisi
 
 # Amaç
