@@ -1,23 +1,36 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "mixins";
 
 /*
 COLORS
 */
-$header: #F3F5F5;
+$header: #C0C5C7;
+$footer: #EEEFF3;
 
 html, body {
   height: 100%;
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background: linear-gradient(to top, #00345990 10%, #007EA7 70%);
+  background: linear-gradient(-45deg, #BEBBBB70 10%, #44405499);
+  background-attachment: fixed;
 }
 
 
 $radiusValue: 7px;
 
 .header {
-  background: $header;
+
+}
+
+
+.container {
+  height: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: grid;
+
+  background: linear-gradient(to top, $header 40%, $footer 70%);
 
   -webkit-border-top-left-radius: $radiusValue;
   -moz-border-top-left-radius: $radiusValue;
@@ -26,8 +39,17 @@ $radiusValue: 7px;
   -webkit-border-top-right-radius: $radiusValue;
   -moz-border-top-right-radius: $radiusValue;
   border-top-right-radius: $radiusValue;
-}
 
+  -webkit-border-bottom-left-radius: $radiusValue;
+  -moz-border-bottom-left-radius: $radiusValue;
+  border-bottom-left-radius: $radiusValue;
+
+  -webkit-border-bottom-right-radius: $radiusValue;
+  -moz-border-bottom-right-radius: $radiusValue;
+  border-bottom-right-radius: $radiusValue;
+
+  @include shadow();
+}
 
 /*****
 SHORTCUTS
